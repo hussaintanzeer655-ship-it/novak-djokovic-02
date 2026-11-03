@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang=\"en\" >
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Djokovic Studio</title>
+  <link rel=\"stylesheet\" href=\"styles.css\" />
+</head>
+<body>
+  <header class=\"top\"><div class=\"brand\">Djokovic Studio</div><nav><a href=\"#bio\">Bio</a><a href=\"#stats\">Stats</a><a href=\"#gallery\">Gallery</a><a href=\"#contact\">Contact</a></nav></header>
+  <section class=\"hero\">
+    <div class=\"cover\"></div>
+    <div class=\"inner\">
+      <h1>Novak Djokovic</h1>
+      <p>Focused. Consistent. Dominant across two decades.</p>
+      <button onclick=\"document.getElementById('stats').scrollIntoView({behavior:'smooth'})\">Explore Stats</button>
+    </div>
+  </section>
+  <section id=\"bio\" class=\"card\">
+    <h2>Bio</h2>
+    <p>From breakthrough teen to record-breaker, a career built on resilience and precision.</p>
+  </section>
+  <section id=\"stats\" class=\"card grid\">
+    <div class=\"stat\"><div class=\"num\">24</div><div class=\"label\">Slams</div></div>
+    <div class=\"stat\"><div class=\"num\">392</div><div class=\"label\">Weeks No.1</div></div>
+    <div class=\"stat\"><div class=\"num\">85</div><div class=\"label\">ATP Titles</div></div>
+  </section>
+  <section id=\"gallery\" class=\"card\">
+    <h2>Gallery</h2>
+    <div class=\"grid"+""+""+\"><div class=\"thumb\" style=\"background:#333;height:100px;border-radius:6px\"></div><div class=\"thumb\" style=\"background:#555;height:100px;border-radius:6px\"></div><div class=\"thumb\" style=\"background:#777;height:100px;border-radius:6px\"></div></div>
+  </section>
+  <section id=\"contact\" class=\"card\">
+    <h2>Contact</h2>
+    <form onsubmit=\"return false;\">
+      <input placeholder=\"Name\" required />
+      <input placeholder=\"Email\" type=\"email\" required />
+      <textarea placeholder=\"Message\" required></textarea>
+      <button type=\"submit\">Send</button>
+    </form>
+  </section>
+  <footer class=\"footer\">© Djokovic Studio</footer>
+  <script src=\"script.js\"></script>
+</body>
+</html>
